@@ -64,8 +64,6 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(self.answer,'Not allocated.')
         self.assertEqual(self.status, 404)
 
-#json used ' odinarnie kovichiki, v intnete napisano, what imenno tak
-#error texzadanie deallocate/r2 = 404, r1 = 204
     def test_deallocateByRes(self):
         print('>deallocateByRes')
         self.curlRequest('reset')
