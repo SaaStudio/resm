@@ -38,6 +38,6 @@ install_depends:
 	chmod -R 777 /var/run/screen
 	apt-get install --yes python3 python3-pip
 	pip3 install django
-	pip3 install djangorestframework"
+	pip3 install djangorestframework
 
 
