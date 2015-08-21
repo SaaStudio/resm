@@ -12,6 +12,7 @@ class TestStringMethods(unittest.TestCase):
 
     def test_emptyList(self):
         print('>empltyList')
+        self.curlRequest('allocate/saa')
         self.curlRequest('reset')
 
         self.curlRequest('list')
