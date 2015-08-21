@@ -1,0 +1,33 @@
+#!/bin/bash
+
+start() {
+	screen -S resm -d -m python3 resm.py
+}
+
+stop() {
+	screen -X -S resm quit
+}
+
+blockedrun() {
+	python3 resm.py
+}
+
+case "$1" in 
+    start)
+       start
+       ;;
+    stop)
+       stop
+       ;;
+    restart)
+       stop
+       start
+       ;;
+    blockedstart)
+       blockedrun
+       ;;
+    *)
+       echo "Usage: $0 {start|stop|restart|blockedstart}"
+esac
+
+exit 0 
