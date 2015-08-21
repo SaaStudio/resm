@@ -33,7 +33,7 @@ uninstall:
 	rm /etc/init.d/resm	
 	rm -r /usr/lib/resm
 
-install_depends2:
+install_depends:
 	apt-get install --yes screen
 	chmod -R 777 /var/run/screen
 	apt-get install --yes python3 python3-pip
